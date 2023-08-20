@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import SmallMenu from "./smallmenu";
+
 import Link from "next/link";
 
 function Navbar() {
@@ -18,59 +18,77 @@ function Navbar() {
 
 	return (
 		<nav className="flex justify-between items-center p-5">
-			<div
-				className="sm:hidden justify-start cursor-pointer"
-				onClick={toggleMobileMenu}
-			>
-				<Image src="/images/icon-menu.svg" alt="menu" width={20} height={20} />
-			</div>
-
-			{/* Mobile menu */}
-			{showMobileMenu && (
-				<div className="fixed justify-items-start left-0 top-0 h-screen w-4/6 bg-white z-20">
-					<div onClick={closeMobileMenu} className="pt-7 pr-7 pl-7 pb-4">
-						<Image
-							src="/images/icon-close.svg"
-							alt="menu"
-							width={15}
-							height={15}
-						/>
-					</div>
-					<ul className="flex flex-col pl-4 text-black font-bold text-base ml-3 mt-6">
-						<li className="py-2">Collection</li>
-						<li className="py-2">Men</li>
-						<li className="py-2">Women</li>
-						<li className="py-2">About</li>
-						<li className="py-2">Contact</li>
-					</ul>
-				</div>
-			)}
-
-			{/* Logo */}
-			<div className="cursor-pointer">
-				<Link href="/">
+			<div className="flex flex-row sm:flex-none ">
+				<div
+					className="sm:hidden justify-start cursor-pointer"
+					onClick={toggleMobileMenu}
+				>
 					<Image
-						alt="logo"
-						src="/images/logo.svg"
-						width={200}
-						height={40}
-						className="w-40 md:w-48"
+						src="/images/icon-menu.svg"
+						alt="menu"
+						width={20}
+						height={20}
 					/>
-				</Link>
-			</div>
+				</div>
 
+				{/* Mobile menu */}
+				{showMobileMenu && (
+					<div className="fixed justify-items-start left-0 top-0 h-screen w-4/6 bg-white z-20">
+						<div onClick={closeMobileMenu} className="pt-7 pr-7 pl-7 pb-4">
+							<Image
+								src="/images/icon-close.svg"
+								alt="menu"
+								width={15}
+								height={15}
+							/>
+						</div>
+						<ul className="flex flex-col pl-4 text-black font-bold text-base ml-3 mt-6">
+							<li className="py-2">Collection</li>
+							<li className="py-2">Men</li>
+							<li className="py-2">Women</li>
+							<li className="py-2">About</li>
+							<li className="py-2">Contact</li>
+						</ul>
+					</div>
+				)}
+
+				{/* Logo */}
+				<div className="cursor-pointer ml-4  ">
+					<Link href="/">
+						<Image
+							alt="logo"
+							src="/images/logo.svg"
+							width={120}
+							height={30}
+							className="w-22 md:w-32"
+						/>
+					</Link>
+				</div>
+			</div>
 			{/* Menu on larger screens */}
-			<ul className="hidden sm:flex list-none space-x-6 text-neutral-grayish-blue text-base">
-				<li>Collection</li>
-				<li>Men</li>
-				<li>Women</li>
-				<li>About</li>
-				<li>Contact</li>
-			</ul>
+			<div className="list-none hidden sm:list-item self-center flex-1 ">
+				<ul className=" flex text-neutral-grayish-blue  text-sm ml-6 pl-4">
+					<li className="self-center cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[rgb(255,255,255)] hover:border-b-primary-orange hover:border-b-[4px]">
+						Collection
+					</li>
+					<li className="self-center ml-[6rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
+						Men
+					</li>
+					<li className="self-center ml-[9rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange hover:border-b-[4px]">
+						Women
+					</li>
+					<li className="self-center ml-[14rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
+						About
+					</li>
+					<li className=" self-center ml-[18rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
+						Contact
+					</li>
+				</ul>
+			</div>
 
 			{/* Icons on the top right */}
-			<div className="flex space-x-7 justify-end">
-				<div className="cursor-pointer self-center">
+			<div className="flex space-x-7 justify-end ">
+				<div className="cursor-pointer self-center ">
 					<Image
 						src="/images/icon-cart.svg"
 						alt="cart"
@@ -84,6 +102,7 @@ function Navbar() {
 						alt="avatar"
 						width={40}
 						height={40}
+						className="w-6 sm:w-10"
 					/>
 				</div>
 			</div>

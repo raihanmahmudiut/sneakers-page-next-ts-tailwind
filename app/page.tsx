@@ -6,7 +6,7 @@ import Image from "next/image";
 export default function Page() {
 	return (
 		<div className="grid grid-cols-1 md:grid-cols-2">
-			<div className="flex flex-col w-full md:w-3/5">
+			<div className="flex flex-col w-full md:w-4/6 sm:mt-20 sm:ml-[80px]">
 				<div>
 					<img
 						src="/images/image-product-1.jpg"
@@ -41,9 +41,11 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
-			<div className="md:pl-14">
-				<h2 className="text-primary-orange font-bold">Sneaker Company</h2>
-				<div className="font-bold text-3xl">Fall Limited Edition Sneakers</div>
+			<div className="flex flex-col sm:ml-2 sm:mt-28 p-4 sm:pt-6 sm:pr-20 justify-content-between ">
+				<h2 className="text-primary-orange font-bold mb-4">Sneaker Company</h2>
+				<div className="font-bold text-4xl mb-12">
+					Fall Limited Edition Sneakers
+				</div>
 				<p className="text-base font-normal text-neutral-grayish-blue">
 					These low-profile sneakers are your perfect casual wear companion.
 					Featuring a durable rubber outer sole, they’ll withstand everything
