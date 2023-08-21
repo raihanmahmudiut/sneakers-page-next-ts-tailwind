@@ -93,7 +93,13 @@ function Navbar() {
 
 			{/* Icons on the top right */}
 			<div className="flex space-x-7 justify-end ">
-				<div className="cursor-pointer self-center" onClick={toggleCart}>
+				<div
+					className="cursor-pointer self-center relative"
+					onClick={toggleCart}
+				>
+					<div className="  box-border text-center text-[8px] font-semibold bg-primary-orange text-white rounded-3xl px-1.5 absolute top-0 right-0 transform translate-x-1/3 -translate-y-1/3">
+						3
+					</div>
 					<Image
 						src="/images/icon-cart.svg"
 						alt="cart"
@@ -101,13 +107,13 @@ function Navbar() {
 						height={20}
 					/>
 				</div>
-				<div className="cursor-pointer self-center">
+				<div className="cursor-pointer self-center ">
 					<Image
 						src="/images/image-avatar.png"
 						alt="avatar"
 						width={40}
 						height={40}
-						className="w-6 sm:w-10"
+						className="w-6 sm:w-10 rounded-full hover:border-primary-orange  hover:border-[3px]"
 					/>
 				</div>
 				{showCart && (
