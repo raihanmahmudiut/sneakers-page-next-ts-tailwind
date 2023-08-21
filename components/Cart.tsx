@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const Cart = () => {
 	return (
-		<div className="shadow-2xl rounded-md">
+		<div className="shadow-2xl rounded-md ">
 			<h2 className="p-6 text-black font-bold ">Cart</h2>
 			<hr className="w-full border-gray-300 " />
 			<div className="flex flex-col p-6">

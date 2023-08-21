@@ -111,7 +111,7 @@ function Navbar() {
 					/>
 				</div>
 				{showCart && (
-					<div className=" mt-14 top-30 right-28 fixed bg-white  z-30">
+					<div className=" rounded-md mt-14 sm:top-30 sm:right-28 fixed bg-white ">
 						<Cart />
 					</div>
 				)}
