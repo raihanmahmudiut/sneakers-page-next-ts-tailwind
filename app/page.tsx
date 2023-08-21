@@ -41,48 +41,49 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col sm:ml-2 sm:mt-24 p-5 sm:pt-6 sm:pr-20 justify-content-between ">
-				<h2 className="text-primary-orange font-bold mb-2">Sneaker Company</h2>
-				<div className="font-bold text-3xl mb-8">
+			<div className="flex flex-col sm:ml-2 sm:mt-24 p-5 sm:mr-14 sm:pt-6 sm:pr-20 justify-content-between ">
+				<h2 className="text-primary-orange font-bold mb-3">Sneaker Company</h2>
+				<div className="font-bold text-4xl mb-10">
 					Fall Limited Edition Sneakers
 				</div>
-				<p className="text-sm font-normal text-neutral-grayish-blue">
+				<p className="text-sm font-normal text-slate-500">
 					These low-profile sneakers are your perfect casual wear companion.
 					Featuring a durable rubber outer sole, they’ll withstand everything
 					the weather can offer.
 				</p>
-				<div className="mt-4">
+				<div className="mt-6">
 					<div className="flex flex-row sm:flex-col justify-between">
 						<div className="flex flex-row">
-							<p className="font-extrabold text-xl">$125.00</p>
+							<p className="font-extrabold text-2xl">$125.00</p>
 							<p className="self-center ml-4 px-2 py-1 rounded font-extrabold text-primary-orange bg-primary-pale-orange">
 								50%
 							</p>
 						</div>
-						<div className="text-neutral-grayish-blue text-sm font-bold ">
+						<div className="text-slate-500 text-sm font-bold ">
 							<del>$250.00</del>
 						</div>
 					</div>
 				</div>
-				<div className="grid grid-cols-3 gap-4 mt-4">
+				<div className="flex flex-col md:grid md:grid-cols-3 gap-4 mt-8">
 					{/* Left Div */}
 
-					<div className="flex flex-row items-center w-full box-border">
-						<div className="cursor-pointer text-primary-orange bg-neutral-light-grayish-blue text-2xl font-bold rounded-md">
-							<img src="/images/icon-minus.svg" alt="" className="p-5" />
+					<div className="grid grid-cols-3 p-2 px-6 md:p-0 items-center  w-full bg-neutral-light-grayish-blue box-border rounded-md">
+						<div className="cursor-pointer ml-10 md:ml-5 text-primary-orange hover:opacity-60 transition-opacity duration-[0.3s] text-2xl font-bold  ">
+							<img src="/images/icon-minus.svg" alt="" className="" />
 						</div>
-						<p className="text-center text-blackfont-bold text-base py-3 bg-neutral-light-grayish-blue">
-							1
-						</p>
-						<div className="cursor-pointer text-primary-orange bg-neutral-light-grayish-blue text-2xl font-bold rounded-md">
-							<img src="/images/icon-plus.svg" alt="" className="p-4" />
+						<p className=" text-black font-bold text-base text-center ">1</p>
+						<div className="cursor-pointer ml-10 md:ml-5 text-primary-orange hover:opacity-60 transition-opacity duration-[0.3s] text-2xl font-bold ">
+							<img src="/images/icon-plus.svg" alt="" className="" />
 						</div>
 					</div>
 
 					{/* Right Div */}
 
-					<div className=" cursor-pointer col-span-2 p-2 w-full text-center text-sm items-center box-border bg-primary-orange text-white rounded-md">
-						Add to Cart
+					<div className="flex items-center justify-center cursor-pointer col-span-2 p-4 px-8 w-full font-bold text-white text-xs box-border bg-primary-orange hover:opacity-60 transition-opacity duration-[0.3s] rounded-md">
+						<div className="w-4 h-4 mr-2">
+							<img src="/images/icon-cart-white.svg" alt="" className="" />
+						</div>
+						<div>Add to Cart</div>
 					</div>
 				</div>
 			</div>

@@ -67,20 +67,20 @@ function Navbar() {
 			</div>
 			{/* Menu on larger screens */}
 			<div className="list-none hidden sm:list-item self-center flex-1 ">
-				<ul className=" flex text-neutral-grayish-blue  text-sm ml-6 pl-4">
-					<li className="self-center cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[rgb(255,255,255)] hover:border-b-primary-orange hover:border-b-[4px]">
+				<ul className=" flex text-slate-500  text-sm ml-6 pl-4">
+					<li className="self-center cursor-pointer absolute top-7 pb-8  transition-opacity duration-[0.3s] hover:text-black hover:border-[rgb(255,255,255)] hover:border-b-primary-orange hover:border-b-[4px]">
 						Collection
 					</li>
-					<li className="self-center ml-[6rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
+					<li className="self-center ml-[6rem] cursor-pointer absolute top-7 pb-8 transition-opacity duration-[0.3s] hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
 						Men
 					</li>
-					<li className="self-center ml-[9rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange hover:border-b-[4px]">
+					<li className="self-center ml-[9rem] cursor-pointer absolute top-7 pb-8 transition-opacity duration-[0.3s] hover:text-black hover:border-[#fff] hover:border-b-primary-orange hover:border-b-[4px]">
 						Women
 					</li>
-					<li className="self-center ml-[14rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
+					<li className="self-center ml-[14rem] cursor-pointer absolute top-7 pb-8 transition-opacity duration-[0.3s] hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
 						About
 					</li>
-					<li className=" self-center ml-[18rem] cursor-pointer absolute top-7 pb-8 hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
+					<li className=" self-center ml-[18rem] cursor-pointer absolute top-7 pb-8 transition-opacity duration-[0.3s] hover:text-black hover:border-[#fff] hover:border-b-primary-orange  hover:border-b-[4px]">
 						Contact
 					</li>
 				</ul>
