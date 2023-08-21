@@ -41,16 +41,50 @@ export default function Page() {
 					</div>
 				</div>
 			</div>
-			<div className="flex flex-col sm:ml-2 sm:mt-28 p-4 sm:pt-6 sm:pr-20 justify-content-between ">
-				<h2 className="text-primary-orange font-bold mb-4">Sneaker Company</h2>
-				<div className="font-bold text-4xl mb-12">
+			<div className="flex flex-col sm:ml-2 sm:mt-24 p-5 sm:pt-6 sm:pr-20 justify-content-between ">
+				<h2 className="text-primary-orange font-bold mb-2">Sneaker Company</h2>
+				<div className="font-bold text-3xl mb-8">
 					Fall Limited Edition Sneakers
 				</div>
-				<p className="text-base font-normal text-neutral-grayish-blue">
+				<p className="text-sm font-normal text-neutral-grayish-blue">
 					These low-profile sneakers are your perfect casual wear companion.
 					Featuring a durable rubber outer sole, they’ll withstand everything
 					the weather can offer.
 				</p>
+				<div className="mt-4">
+					<div className="flex flex-row sm:flex-col justify-between">
+						<div className="flex flex-row">
+							<p className="font-extrabold text-xl">$125.00</p>
+							<p className="self-center ml-4 px-2 py-1 rounded font-extrabold text-primary-orange bg-primary-pale-orange">
+								50%
+							</p>
+						</div>
+						<div className="text-neutral-grayish-blue text-sm font-bold ">
+							<del>$250.00</del>
+						</div>
+					</div>
+				</div>
+				<div className="grid grid-cols-3 gap-4 mt-4">
+					{/* Left Div */}
+
+					<div className="flex flex-row items-center w-full box-border">
+						<div className="cursor-pointer text-primary-orange bg-neutral-light-grayish-blue text-2xl font-bold rounded-md">
+							<img src="/images/icon-minus.svg" alt="" className="p-5" />
+						</div>
+						<p className="text-center text-blackfont-bold text-base py-3 bg-neutral-light-grayish-blue">
+							1
+						</p>
+						<div className="cursor-pointer text-primary-orange bg-neutral-light-grayish-blue text-2xl font-bold rounded-md">
+							<img src="/images/icon-plus.svg" alt="" className="p-4" />
+						</div>
+					</div>
+
+					{/* Right Div */}
+
+					<div className=" cursor-pointer col-span-2 p-2 w-full text-center text-sm items-center box-border bg-primary-orange text-white rounded-md">
+						Add to Cart
+					</div>
+				</div>
 			</div>
 		</div>
 	);
