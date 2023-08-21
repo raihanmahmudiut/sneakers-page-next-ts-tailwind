@@ -11,7 +11,7 @@ export default function Page() {
 					<img
 						src="/images/image-product-1.jpg"
 						alt="product-main-img"
-						className="rounded-xl "
+						className="rounded-md "
 						// Use responsive layout
 					/>
 				</div>
