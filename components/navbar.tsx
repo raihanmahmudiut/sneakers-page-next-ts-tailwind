@@ -1,5 +1,5 @@
 "use client";
-
+import Cart from "./Cart";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -7,6 +7,7 @@ import Link from "next/link";
 
 function Navbar() {
 	const [showMobileMenu, setShowMobileMenu] = useState(false);
+	const [showCart, setshowCart] = useState(false);
 
 	const toggleMobileMenu = () => {
 		setShowMobileMenu(!showMobileMenu);
@@ -14,6 +15,10 @@ function Navbar() {
 
 	const closeMobileMenu = () => {
 		setShowMobileMenu(false);
+	};
+
+	const toggleCart = () => {
+		setshowCart(!showCart);
 	};
 
 	return (
@@ -88,7 +93,7 @@ function Navbar() {
 
 			{/* Icons on the top right */}
 			<div className="flex space-x-7 justify-end ">
-				<div className="cursor-pointer self-center ">
+				<div className="cursor-pointer self-center" onClick={toggleCart}>
 					<Image
 						src="/images/icon-cart.svg"
 						alt="cart"
@@ -105,6 +110,11 @@ function Navbar() {
 						className="w-6 sm:w-10"
 					/>
 				</div>
+				{showCart && (
+					<div className=" mt-14 top-30 right-28 fixed bg-white  z-30">
+						<Cart />
+					</div>
+				)}
 			</div>
 
 			{/* Overlay when mobile menu is open */}
